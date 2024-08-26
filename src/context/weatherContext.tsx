@@ -167,7 +167,7 @@ const WeatherProvider: React.FC<{ children: React.ReactNode }> = ({
 
     try {
       const response1 = await axios.get(
-        `http://api.weatherapi.com/v1/current.json`,
+        `https://api.weatherapi.com/v1/current.json`,
         {
           params: {
             key: import.meta.env.VITE_WEATHER_API_KEY,
@@ -178,7 +178,7 @@ const WeatherProvider: React.FC<{ children: React.ReactNode }> = ({
       );
 
       const response2 = await axios.get(
-        `http://api.weatherapi.com/v1/forecast.json`,
+        `https://api.weatherapi.com/v1/forecast.json`,
         {
           params: {
             key: import.meta.env.VITE_WEATHER_API_KEY,
@@ -210,7 +210,7 @@ const WeatherProvider: React.FC<{ children: React.ReactNode }> = ({
 
     try {
       const response1 = await axios.get(
-        `http://api.weatherapi.com/v1/current.json`,
+        `https://api.weatherapi.com/v1/current.json`,
         {
           params: {
             key: import.meta.env.VITE_WEATHER_API_KEY,
@@ -221,7 +221,7 @@ const WeatherProvider: React.FC<{ children: React.ReactNode }> = ({
       );
 
       const response2 = await axios.get(
-        `http://api.weatherapi.com/v1/forecast.json`,
+        `https://api.weatherapi.com/v1/forecast.json`,
         {
           params: {
             key: import.meta.env.VITE_WEATHER_API_KEY,
