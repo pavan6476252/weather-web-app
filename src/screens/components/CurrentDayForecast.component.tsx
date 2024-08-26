@@ -1,4 +1,3 @@
-import React from "react";
 import { useWeather } from "../../context/weatherContext";
 
 export default function CurrentDayForecastComponent() {

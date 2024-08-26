@@ -1,5 +1,4 @@
-import React from "react";
-import { IoSunny } from "react-icons/io5";
+ 
 import { useWeather } from "../../context/weatherContext";
 
 function WeatherComponent() {

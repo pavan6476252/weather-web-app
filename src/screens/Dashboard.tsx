@@ -1,10 +1,10 @@
-import React, { useContext, useEffect } from "react";
+import  {  useEffect } from "react";
 import SearchBar from "./components/SearchBar";
 import ForecastComponent from "./components/Forecast.component";
 import WeatherComponent from "./components/Weather.component";
 import AirConditionsComponent from "./components/AirConditions.component";
 import CurrentDayForecastComponent from "./components/CurrentDayForecast.component";
-import { useWeather, WeatherContextType } from "../context/weatherContext";
+import { useWeather, } from "../context/weatherContext";
 
 function Dashboard() {
   const { error, loading, fetchWeatherByLocation } = useWeather();

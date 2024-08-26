@@ -1,6 +1,4 @@
-import React from "react";
 import {
-  FaGlassWaterDroplet,
   FaTemperatureQuarter,
   FaWind,
 } from "react-icons/fa6";

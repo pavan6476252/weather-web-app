@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { FaHistory, FaLocationArrow } from "react-icons/fa";
-import { FaLocationPin, FaX } from "react-icons/fa6";
 import { useWeather } from "../../context/weatherContext";
-import { BiHistory } from "react-icons/bi";
+import { FaX } from "react-icons/fa6";
 
 function SearchBar() {
   const {
