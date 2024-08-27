@@ -14,21 +14,23 @@ export default function CurrentDayForecastComponent() {
   };
 
   return (
-    <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-screen-lg mx-auto">
-      <h1 className="text-lg font-bold text-slate-400 mb-4">Today's Forecast</h1>
+    <div className=" ml-2 lg:mx-auto bg-slate-50 dark:bg-gray-800 p-6 rounded-lg w-full max-w-screen-lg ">
+      <h1 className="text-lg font-bold text-black dark:text-slate-400 mb-4">
+        Today's Forecast
+      </h1>
       <div className="flex w-full overflow-x-auto space-x-4">
         {currentDayForecast.hour.map((hour, index) => (
           <div
             key={index}
-            className="flex flex-col items-center space-y-2 p-8 shadow-md border-r"
+            className="flex flex-col items-center space-y-2 p-8  border-r"
           >
-            <span className="text-gray-300 text-lg">
-              {new Date(hour.time_epoch??0 * 1000).toLocaleTimeString([], {
-                hour: '2-digit',
-                minute: '2-digit',
+            <span className="text-lg text-nowrap text-black dark:text-gray-300 ">
+              {new Date(hour.time_epoch ?? 0 * 1000).toLocaleTimeString([], {
+                hour: "2-digit",
+                minute: "2-digit",
               })}
             </span>
-            <span className="text-5xl font-bold text-white">
+            <span className="lg:text-5xl md:text-2xl text-xl font-bold text-black dark:text-gray-300 ">
               {Math.round(hour.temp_c)}°C
             </span>
             {getIcon(hour.condition.icon)}

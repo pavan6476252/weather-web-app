@@ -97,8 +97,8 @@ function SearchBar() {
     setIsHistoryVisible(false);
   };
   return (
-    <div className="relative">
-      <div className=" w-full flex bg-gray-700 border overflow-hidden text-white rounded-lg">
+    <div className="relative ">
+      <div className=" w-full flex dark:bg-gray-700 border overflow-hidden text-white rounded-lg">
         <input
           type="text"
           value={locationName}
@@ -111,7 +111,7 @@ function SearchBar() {
               handleSearch();
             }
           }}
-          className="w-full p-2 bg-transparent focus:outline-none"
+          className="w-full p-4 bg-transparent focus:outline-none"
         />
         <button
           disabled={loading}
@@ -148,7 +148,7 @@ function SearchBar() {
                   {location}
                 </span>
                 <FaX
-                  className="text-white bg-red-400 p-2 rounded-full"
+                  className="dark:text-black bg-red-400/10 p-2 rounded-full"
                   onClick={() => removeFromHistory(index)}
                 />
               </li>
